@@ -1,0 +1,219 @@
+
+@keyframes rotate360{
+		25%{
+			transform:translateY(-50%) rotate(90deg); 
+			height: 1.212vw;
+   			width: 1.212vw;
+		}
+		50%{
+			transform:translateY(-50%) rotate(180deg); 
+			height: 0.606vw;
+   			width: 0.606vw;
+		}
+		75%{
+			transform:translateY(-50%) rotate(270deg); 
+			height: 1.212vw;
+   			width: 1.212vw;
+		}
+		100%{
+			transform:translateY(-50%) rotate(360deg); 
+			height: 0.606vw;
+   			width: 0.606vw;
+		}
+}
+
+@keyframes hoverfill{
+	30%{
+		height: 100%;
+	}
+
+	100%{
+		width: 0%;
+		height: 0%;
+	}
+}
+
+
+@keyframes astronaut-hilao{
+	0%{
+		transform: translateY(-10px) rotate(45deg);
+	}
+
+	100%{
+		transform: translateY(10px) rotate(0deg);
+	}
+
+}
+
+@keyframes astronaut-message{
+	0%{
+		transform: translateY(-50%) rotate(-25deg);
+	}
+
+	100%{
+		transform: translateY(-50%) translateX(50px) rotate(0deg);
+	}
+}
+
+
+@keyframes translateY{
+	0%{
+		transform: translateY(-10px);
+	}
+
+	100%{
+		transform: translateY(10px);
+	}
+
+}
+
+@keyframes rotateearth{
+	0%{
+		transform: rotate(00deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes transitionIn{
+	0%{
+		opacity: 0;
+		transform:rotateX(10deg);
+	}
+	100%{
+		opacity: 1;
+		transform: rotateX(0deg);
+	}
+}
+
+
+@keyframes astraunaut-head{
+	0%{
+		top: 115.727vw;
+		opacity: 0;
+	}
+
+	100%{
+		top: 15.727vw;
+		opacity: 1;
+	}
+}
+
+@keyframes astraunaut-head-mob{
+	0%{
+		top: 500px;
+		opacity: 0;
+	}
+
+	100%{
+		top: 90px;
+		opacity: 1;
+	}
+}
+
+
+
+/*About*/
+
+@keyframes satellite{
+	0%{
+		transform: rotate(45deg) translateY(10px);
+	}
+
+	100%{
+		transform: rotate(0deg) translateY(0px);
+	}
+}
+
+/*Contact*/
+
+@keyframes item-main-contact{
+	0%{
+		transform: translateY(-10vh);
+	}
+
+	100%{
+		transform: translateY(0);
+	}
+}
+
+@keyframes item-small-left-top-bottom-right{
+	0%{
+		transform: rotate(45deg) translate(1vh,1vw);
+	}
+
+	100%{
+		transform: rotate(0deg) translate(1vh,1vw);
+	}
+}
+
+@keyframes image-4{
+	0%{
+		transform: translateY(20px);
+	}
+
+	100%{
+		transform: translateY(0vh);
+	}
+}
+
+@keyframes item-main-contact-mobile{
+	0%{
+		transform: translateY(-10px);
+	}
+
+	100%{
+		transform: translateY(0);
+	}
+}
+
+@keyframes slide-down {
+    0% { 
+    	opacity: 0; transform: rotate(360deg) scale(0);
+    }
+    100% { 
+    	opacity: 1; transform: rotate(00deg) scale(1);
+    }
+}
+
+@keyframes slide-up {
+    0% { 
+    	opacity: 0; transform: scale(0);
+    }
+    100% { 
+    	opacity: 1; transform: scale(1);
+    }
+}
+
+@keyframes tab-astronaut{
+    0% { 
+    	transform: translateY(16px); 
+    }
+    100% { 
+    	transform: translateY(0);
+    }
+}
+
+@keyframes blinking{
+    0%{ 
+    	transform: scale(1); 
+    }
+
+    100% { 
+    	transform: scale(1.5); ;
+    }  
+}
+
+
+@keyframes width-anime{
+    0%{ 
+    	width: 0%;
+    }
+
+    100% { 
+    	width: 100%;
+    }  
+}
+
+

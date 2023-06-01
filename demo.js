@@ -1,0 +1,6 @@
+const queryString = require('query-string');
+const a = "?data=%7B%22success%22%3Atrue%2C%22status%22%3A200%2C%22msg%22%3A%22login%20Successfully%22%2C%22firstName%22%3A%22%22%2C%22lastName%22%3A%22%22%2C%22profilePic%22%3Anull%2C%22subscription%22%3Anull%2C%22_id%22%3A%2261a8da7cf9a19d05a503aa29%22%2C%22confirmed%22%3Atrue%2C%22blocked%22%3Afalse%2C%22username%22%3A%22farooq%22%2C%22email%22%3A%22farooq.khan%40oip.com.pk%22%2C%22provider%22%3A%22local%22%2C%22createdAt%22%3A%222021-12-02T14%3A38%3A52.803Z%22%2C%22updatedAt%22%3A%222022-07-05T08%3A54%3A08.388Z%22%2C%22role%22%3A%7B%22_id%22%3A%2260d49b8573efdc3704545b22%22%2C%22name%22%3A%22USER%22%7D%2C%22customerId%22%3A%22cus_Ki26rDHGvZF2CG%22%2C%22continueToBook%22%3A%22%2Fbook%2Fgreat-marshal%2Fgreat-marshal-part-2%23chapter-105%22%2C%22resetPasswordToken%22%3A%22bf6417c0f81ef867fabcbe6d2af4150dccabd4d8918f21c42b1733eee1af4114e9e001816b967851fbc14aaf2bbb95ff4cc855a7485de3fbf4849ff69c083298%22%2C%22feature%22%3A%7B%22readingStyle%22%3Afalse%2C%22ads%22%3Afalse%2C%22betaChapter%22%3Afalse%2C%22emailNotification%22%3Afalse%7D%2C%22token%22%3A%22eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWE4ZGE3Y2Y5YTE5ZDA1YTUwM2FhMjkiLCJpYXQiOjE2NTcwMTEyNDh9.L4IBXFo-keCdjCU98_Q89vGN4BrLczHntM61YVVN5Q0%22%7D"
+
+const parsed = queryString.parse(a);
+const parsed1 = JSON.parse(parsed.data);
+console.log(parsed1);

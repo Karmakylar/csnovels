@@ -1,0 +1,540 @@
+/* New Book Cover Section By As Start */
+.books_sec {
+  margin-top: 30px;
+}
+
+.container-1240 {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.sec-heading-wraper {
+  margin-bottom: 30px;
+}
+
+.sec-heading {
+  font-size: 38px;
+  text-transform: uppercase;
+  font-family: 'Montserrat-SemiBold';
+  position: relative;
+  margin: 0;
+}
+
+.sec-heading:before {
+  content: '';
+  width: 5px;
+  height: 100%;
+  position: absolute;
+  display: inline-block;
+  background: #ffbd49;
+  left: -20px;
+}
+
+.btn-box {
+  text-align: right;
+}
+
+.btn-box button {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 100px;
+  color: #757575;
+  font-family: 'Montserrat-SemiBold';
+  font-size: 14px;
+}
+
+.btn-box button svg {
+  margin-left: 6px;
+}
+
+.books_wraper {
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 50px 20px;
+}
+
+.book_main {
+  width: 100%;
+  max-width: calc(16.66% - 17px);
+  cursor: pointer;
+}
+
+.book_image {
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.book_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .4s ease-in-out;
+}
+
+.book_image:hover img {
+  transform: scale(1.05);
+}
+
+.books_wraper .book_main .book_title {
+  font-size: 18px;
+  margin: 10px 0;
+  font-family: 'Montserrat-Bold';
+  text-transform: capitalize;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 40px;
+}
+
+.book_desc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.book_desc .book_chapter .book_chps {
+  font-size: 15px;
+  margin-left: 8px;
+}
+
+.book_desc .book_chapter {
+  display: flex;
+  align-items: center;
+}
+
+.book_desc button {
+  border: none;
+  outline: none !important;
+  background: none;
+}
+
+/* Bookmark Books */
+.book_main.fromBookmarks .book_desc {
+  display: block;
+}
+
+.book_main.fromBookmarks .book_desc .book_chapter {
+  display: block;
+  text-align: center;
+}
+
+.book_main.fromBookmarks .book_desc .book_chapter {
+  background: #fec342;
+  padding: 5px 0;
+  border-radius: 100px;
+  font-family: 'Montserrat-SemiBold';
+  color: #333333;
+}
+
+/* End */
+.complete_novels {
+  margin-top: 60px;
+}
+
+/* Most Popular Books */
+.books_wraper.most {
+  grid-gap: 30px 50px;
+}
+.book_main.most_popular  {
+  width: 100%;
+  max-width: calc(33.35% - 35px);
+  cursor: pointer;
+  display: flex;
+  grid-column-gap: 20px;
+}
+.book_main.most_popular .book_image {
+  max-width: 100%;
+  flex: 0 0 35%;
+}
+.book_main.most_popular .books_details {
+  flex: 0 0 60%;
+}
+.book_main.most_popular .book_title{
+  margin: 0 0 4px 0;
+}
+.book_main.most_popular  .mp-book-category span {
+  color: #8d939d;
+  font-size: 14px;
+  font-family: 'Montserrat-SemiBold';
+}
+.book_main.most_popular  span.bookCatName_Status svg {
+  width: 18px;
+  height: auto;
+}
+
+.book_main.most_popular  .book_description {
+  font-family: "Montserrat";
+  font-size: 15px;
+  line-height: 1.2;
+  text-transform: capitalize;
+  color: #454545;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  margin: 6px 0 12px 0;
+  width: 100%;
+}
+
+/* End */
+
+/* Filters Books */
+.filter_books .books_wraper {
+  grid-column-gap: 40px;
+}
+.filter_books .book_main {
+  max-width: calc(50% - 30px);
+  grid-column-gap: 20px;
+}
+.filter_books .book_main .book_image {
+  flex: 0 0 30%;
+}
+.filter_books .book_main .books_details {
+  flex: 0 0 67%;
+}
+.filter_books .mp-book-category-tag {
+  display: none;
+}
+.filter_books .book_main .book_desc .dblock-infilterPage {
+  display: inline-block !important;
+  font-size: 13px;
+  margin-right: 8px;
+  font-family: 'Montserrat-SemiBold';
+}
+
+/* End */
+.ongoing_novel {
+  margin-top: 60px;
+}
+.bookmark_img{
+  cursor: pointer !important;
+}
+/* Responsive */
+@media(max-width:1599px) {
+  .sec-heading {
+    font-size: 28px;
+  }
+
+  .btn-box button {
+    font-size: 13px;
+  }
+
+  .books_wraper .book_main .book_title {
+    font-size: 16px;
+  }
+
+  .book_main .book_desc .book_chapter .book_chps {
+    font-size: 14px;
+  }
+
+  .book_main .book_desc .book_chapter svg.mp-book-chapter-icon {
+    width: 15px;
+    height: 15px;
+  }
+
+  .book_main .book_desc svg.mp-favorite-heart {
+    transform: none;
+    width: 16px;
+    height: 16px;
+  }
+
+}
+
+@media(max-width:1439px) {
+  .books_wraper .book_main .book_title {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  .books_wraper .book_main .book_description {
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+
+}
+
+@media(max-width:1279px) {
+  .book_image {
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  .books_wraper .book_main .book_title {
+    font-size: 13px;
+    margin-top: 6px;
+  }
+
+  .book_main .book_desc .book_chapter .book_chps {
+    font-size: 11px;
+    margin-left: 4px;
+    font-family: 'Montserrat-SemiBold';
+  }
+
+  .sec-heading {
+    font-size: 24px;
+    margin: 0;
+  }
+
+  .btn-box button {
+    font-size: 12px;
+    padding: 8px 20px;
+  }
+
+  .sec-heading {
+    font-size: 22px;
+  }
+  .books_wraper.most_popular  {
+    grid-gap: 30px 40px;
+  }
+  .book_main.most_popular {
+    max-width: calc(33.35% - 28px);
+    grid-column-gap: 15px;
+  }
+  .book_main.most_popular .book_image {
+    max-width: 100%;
+    flex: 0 0 48%;
+  }
+  .book_main.most_popular  {
+    max-width: calc(50% - 35px)
+  }
+  .book_main.most_popular  .book_image {
+    flex: 0 0 30%;
+  }
+  /* Filter Page  */
+  .filter_books .books_wraper {
+    grid-gap: 30px 20px;
+  }
+  .filter_books .book_main {
+    max-width: calc(50% - 10px);
+    gap: 15px;
+  }
+  .filter_books .book_main .book_image {
+    flex: 0 0 42%;
+    width: 100% !important;
+  }
+  .filter_books  .book_main .book_description {
+    font-size: 12px;
+  }
+  .filter_books .book_main .books_details {
+    flex: 0 0 50%;
+  }
+  .filter_books .book_main span.bookCatName_Status svg {
+    width: 12px;
+    height: auto;
+  }
+  .filter_books .book_desc .book_chapter .book_chps {
+    font-size: 10px;
+    margin-left: 4px;
+    font-family: 'Montserrat-SemiBold';
+  }
+  .filter_books .book_desc .book_chapter {
+    width: 100%;
+  }
+  .filter_books .book_desc {
+    flex-wrap: wrap;
+  }
+  .filter_books .book_desc button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  /* End */
+
+}
+
+@media(max-width:991px) {
+  .books_wraper {
+    grid-gap: 30px 15px;
+  }
+
+  .books_wraper .book_main {
+    max-width: calc(20% - 13px);
+  }
+
+  .book_main .book_desc svg.mp-favorite-heart,
+  .book_main .book_desc .book_chapter svg.mp-book-chapter-icon {
+    transform: none;
+    width: 12px;
+    height: 12px;
+  }
+
+  .btn-box button {
+    display: none;
+  }
+
+  .sec-heading {
+    font-size: 20px;
+  }
+
+  .sec-heading:before {
+    display: none;
+  }
+
+  .books_sec .sec-heading-wraper {
+    margin-bottom: 20px;
+  }
+
+  /* Most Popular Books */
+  .books_wraper.most .book_main {
+    /* max-width: calc(48% - 10px); */
+    max-width: calc(48% - 15px);
+  }
+  .book_main.most_popular  .book_image {
+    flex: 0 0 40%;
+  }
+  .books_wraper .book_main .book_description {
+    font-size: 13px;
+  }
+  .book_main.most_popular  .mp-book-category span {
+    font-size: 12px;
+  }
+  .book_main.most_popular  span.bookCatName_Status svg {
+    width: 12px;
+  }
+  /* End */
+
+  /* Filter Page  */
+  .filter_books .book_main {
+    max-width: 100%;
+    align-items: center;
+  }
+  .filter_books .book_main .book_image {
+    flex: 0 0 28%;
+  }
+  .filter_books .book_main .books_details {
+    flex: unset;
+  }
+  .filter_books .book_desc {
+    flex-wrap: nowrap;
+  }
+  .books_wraper .book_main .book_title {
+    font-size: 13px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  /* End */
+
+
+}
+
+@media(max-width:767px) {
+  .books_wraper {
+    grid-gap: 15px;
+  }
+
+  .books_wraper .book_main {
+    max-width: calc(25% - 12px);
+  }
+
+  .book_main .book_desc {
+    display: none;
+  }
+
+  .books_wraper .book_main .book_title {
+    height: auto;
+  }
+  .most_popular .mp-book-category,
+  .most_popular .book_description {
+    display: none !important;
+  }
+  .book_main.most_popular  .books_details {
+    flex: unset;
+  }
+  .books_wraper.most {
+    grid-gap: 10px;
+  }
+  .book_main.most_popular  .book_image { 
+    flex: unset;
+  }
+  .books_wraper.most .book_main {
+    max-width: calc(25% - 8px);
+    display: block;
+  }
+  .ongoing_novel {
+    margin-top: 40px;
+  }
+
+  /* Recent Books */
+  .recent_books{
+    padding: 0 18px !important;
+  }
+  .recent_books .recent {
+    gap: 15px;
+    flex-wrap: wrap !important;
+    justify-content: unset !important;
+  }
+  .recent_books .top10Books {
+    width: 100%;
+    margin: 0;
+    flex: unset;
+    max-width: calc(25% - 12px);
+    padding: 0;
+  }
+  .recent_books > p {
+    margin: 0;
+    margin-bottom: 6px;
+  }
+  /* End */
+
+  /* Recent Books Profile Page */
+  .rb_profile .container-1240 {
+    padding: 0 4px !important;
+  }
+
+  .rb_profile .books_sec {
+      margin-top: 12px;
+  }
+  /* End */
+
+  /* Last Favorite Profile Page */
+  .favorite_books .container-1240 {
+    padding: 0 4px !important;
+  }
+
+  .favorite_books .books_wraper {
+      gap: 15px;
+  }
+
+  /* End */
+
+}
+
+@media(max-width:575px) {
+  .books_sec .container-1240 {
+    padding: 0 15px;
+  }
+
+}
+
+@media(max-width:375px) {
+  .books_wraper {
+    grid-column-gap: 10px;
+  }
+
+  .books_wraper .book_main {
+    max-width: calc(25% - 8px);
+  }
+
+  .books_wraper .book_main .book_title {
+    font-size: 11px;
+  }
+
+  .books_sec .sec-heading-wraper {
+    margin-bottom: 15px;
+  }
+
+  .sec-heading {
+    font-size: 16px;
+  }
+
+
+}
+
+/* New Book Cover Section By As End */
